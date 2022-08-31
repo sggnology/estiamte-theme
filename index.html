@@ -4,10 +4,797 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>나좀그만괴롭혀</title>
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/html2canvas.js"></script>
 </head>
 <body>
-    <h1>웹 호스팅 테스트입니다.</h1>
-    <img src="./asset/favicon.png">
+    <div class="row">
+        <div class="col-2"> </div>
+        <div id="capture-target" class="col my-5">
+            <div class="container text-center">
+                <h1 style="font-family: 'Aboreto-Regular';">
+                    <!-- <span style="font-size: 1vw; font-weight: bold;">P&P TILE</span>  -->
+                    견적서
+                </h1>
+                <!-- <div class="border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;" data-transform-info-component>
+                    <input id="motto" class="form-control">
+                    <p style="word-break: break-word; font-size: 14px; font-family: 'GowunBatang-Regular';"></p>
+                </div> -->
+                <p style="font-size: 14px; font-family: 'GowunBatang-Regular';">고객님 만족에 최선을 다합니다.</p>
+            </div>
+            <div class="row border-top border-2 border-secondary mt-5">
+                <div class="col border-end border-1 border-secondary">
+                    <div class="row">
+                        <div class="col-12 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>-</span>
+                        </div>
+                        <div class="col-5 border-end border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>전화 번호</span>
+                        </div>
+                        <div class="col-7 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;" data-transform-info-component>
+                            <input id="phoneNumber" class="form-control">
+                            <p style="word-break: break-word; text-align: left;"></p>
+                        </div>
+                        <div class="col-5 border-end border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>팩스 번호</span>
+                        </div>
+                        <div class="col-7 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;" data-transform-info-component>
+                            <input id="faxNumber" class="form-control">
+                            <p style="word-break: break-word; text-align: left;"></p>
+                        </div>
+                        <div class="col-5 border-end border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>견적 일자</span>
+                        </div>
+                        <div class="col-7 border-bottom border-1 border-secondary d-flex align-items-center justify-content-start" style="min-height: 40px;" data-transform-info-component>
+                            <input id="estimateDate" class="form-control">
+                            <p style="word-break: break-word; text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-start border-1 border-secondary">
+                    <div class="row">
+                        <div class="col-12 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>공급자</span>
+                        </div>
+                        <div class="col-5 border-end border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>등록 번호</span>
+                        </div>
+                        <div class="col-7 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;" data-transform-info-component>
+                            <!-- <span>108-30-28842</span> -->
+                            <input id="businessNumber" class="form-control">
+                            <p style="word-break: break-word; text-align: left;"></p>
+                        </div>
+                        <div class="col-5 border-end border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>상 호</span>
+                        </div>
+                        <div class="col-7 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;" data-transform-info-component>
+                            <!-- <span>피엔피 타일(P&P 타일)</span> -->
+                            <input id="businessName" class="form-control">
+                            <p style="word-break: break-word; text-align: left;"></p>
+                        </div>
+                        <div class="col-5 border-end border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>성 명</span>
+                        </div>
+                        <div class="col-7 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;" data-transform-info-component>
+                            <!-- <span>박재훈</span> -->
+                            <input id="representativeName" class="form-control">
+                            <p style="word-break: break-word; text-align: left;"></p>
+                        </div>
+                        <!-- <div class="col-4 border-end border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>상 호</span>
+                        </div>
+                        <div class="col-8 border-bottom border-1 border-secondary d-flex align-items-center justify-content-center" style="min-height: 40px;">
+                            <span>피엔피 타일(P&P 타일)</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top border-2 border-secondary mt-5">
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">은행</div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">IBK 기업은행</div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">계좌번호</div>
+                <div class="col-5 border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">167-160010-04-012</div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">견적합계</div>
+                <!-- <div class="col-4 border-end border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">금 원정</div> -->
+                <div class="col-8 border-end border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">
+                    <span>&#8361</span>
+                    <span class="pe-1"></span>
+                    <span data-estimate-amount-result>0</span>
+                </div>
+                <div class="col-2 border-bottom border-1 border-secondary d-flex align-items-center" style="min-height: 40px;">(VAT 제외)</div>
+            </div>
+            <div class="row border-top border-2 border-secondary mt-5">
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary">No.</div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary">품목명</div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary">규격</div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary">수량</div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary">단위</div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary">단가</div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary">견적금액</div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary">비고</div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 40px;" data-item-row>
+                <div class="col-1 border-start border-end border-bottom border-1 border-secondary d-flex align-items-center">
+
+                </div>
+                <div class="col-3 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p class="d-none" style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-count>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component data-amount>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-2 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-estimate-amount>
+                    <p style="word-break: break-word;"></p>
+                </div>
+                <div class="col-1 border-end border-bottom border-1 border-secondary d-flex align-items-center" data-transform-component>
+                    <input class="form-control">
+                    <p style="word-break: break-word;"></p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-2"> </div>
+    </div>
+    <button id="info-transform-btn" class="btn btn-primary rounded-5 position-fixed" onclick="toggleInfoIptAndP()" style="right: 10px; top: 10px;">정보 전환</button>
+    <button class="btn btn-primary rounded-5 position-fixed" onclick="toggleValueIptAndP()" style="right: 10px; bottom: 10px;">값 전환</button>
+    <button id="download-btn" class="btn btn-secondary rounded-5 position-fixed d-none" onclick="downloadButtonClick()" style="right: 10px; bottom: 70px;">다운로드</button>
+    <button id="jaehoon-btn" class="btn btn-secondary position-fixed opacity-0" onclick="jaehoonAutoFill()" style="width: 150px; height: 150px; left: 0; bottom: 0;"></button>
 </body>
+<script>
+    const $captureTarget = document.querySelector('#capture-target');
+    const $downloadBtn = document.querySelector('#download-btn');
+
+    const numberFormatter = new Intl.NumberFormat('ko-KR');
+
+    const iptToggleBef = "form-control";
+    const iptToggleAft = "form-control d-none";
+
+    const pToggleBef = "d-none";
+    const pToggleAft = "";
+
+    const downloadBtnToggleBef = "btn btn-secondary rounded-5 position-fixed d-none";
+    const downloadBtnToggleAft = "btn btn-secondary rounded-5 position-fixed";
+
+    let IS_INFO_TOGGLED = false;
+    let IS_VALUE_TOGGLED = false;
+    
+    const toggleValueIptAndP = function(){
+
+        IS_VALUE_TOGGLED = !IS_VALUE_TOGGLED;
+
+        document.querySelectorAll('[data-item-row]').forEach(($targetDom)=>{
+            toggleValueProcess({$targetDom: $targetDom});
+        });
+
+        calcEstimateAmountResult();
+        toggleDownloadBtn();
+    };
+
+    const toggleValueProcess = function({
+        $targetDom
+    }){
+        $targetDom.querySelectorAll('[data-transform-component]').forEach(($component)=>{
+
+            const $ipt = $component.querySelector('input');
+            const $p = $component.querySelector('p');
+
+            if($ipt == null || $p == null){
+                console.error('data-transform-component 내부의 input, p 태그중 하나가 null 입니다.');
+                return;
+            }
+
+            if(IS_VALUE_TOGGLED){
+                $ipt.className = iptToggleAft;
+                $p.className = pToggleAft;
+
+                $p.innerHTML = $ipt.value
+            }
+            else{
+                $ipt.className = iptToggleBef;
+                $p.className = pToggleBef;
+            }
+        });
+
+        if(IS_VALUE_TOGGLED){
+            calcEstimateAmount({$targetDom: $targetDom});
+        }
+    }
+
+    const calcEstimateAmount = function({
+        $targetDom
+    }){
+        const $count = $targetDom.querySelector('[data-count]').querySelector('input');
+        const $amount = $targetDom.querySelector('[data-amount]').querySelector('input');
+        const $estimateAmount = $targetDom.querySelector('[data-estimate-amount]').querySelector('p');
+
+        if($count.value == '' || $amount.value == ''){
+            console.error('견적금액은 수량과 단가 둘중하나의 값이 없습니다.');
+            $estimateAmount.innerHTML = 0;
+            return;
+        }
+
+        const count = parseInt($count.value);
+        const amount = parseInt($amount.value);
+
+        $estimateAmount.innerHTML = count * amount;
+    }
+
+    const calcEstimateAmountResult = function(){
+
+        let sum = 0;
+
+        document.querySelectorAll('[data-estimate-amount]').forEach(($estimateAmount)=>{
+            sum += parseInt($estimateAmount.querySelector('p').innerHTML); 
+        })
+
+        document.querySelector('[data-estimate-amount-result]').innerHTML = getFormattedNumber({
+            number: sum
+        });
+    }
+
+    const toggleDownloadBtn = function(){
+
+        if(IS_VALUE_TOGGLED){
+            $downloadBtn.className = downloadBtnToggleAft;
+        }
+        else{
+            $downloadBtn.className = downloadBtnToggleBef;
+        }
+    }
+
+    const downloadButtonClick = function(){
+        html2canvas($captureTarget).then(canvas => {
+            document.body.appendChild(canvas)
+
+            var link = document.createElement('a');
+            link.download = 'filename.png';
+            link.href = document.querySelector('canvas').toDataURL()
+            link.click();
+    
+            document.querySelector('canvas').remove();
+        });
+    }
+
+    const toggleInfoIptAndP = function(){
+
+        IS_INFO_TOGGLED = !IS_INFO_TOGGLED;
+
+        document.querySelectorAll('[data-transform-info-component]').forEach(($infoComponent)=>{
+            toggleInfoProcess({$targetDom: $infoComponent});
+        });
+
+    }
+
+    const toggleInfoProcess = function({
+        $targetDom
+    }){
+        const $ipt = $targetDom.querySelector('input');
+        const $p = $targetDom.querySelector('p');
+
+        if(IS_INFO_TOGGLED){
+            $ipt.className = iptToggleAft;
+            $p.className = pToggleAft;
+
+            $p.innerHTML = $ipt.value;
+        }
+        else{
+            $ipt.className = iptToggleBef;
+            $p.className = pToggleBef;
+        }
+    }
+
+    const jaehoonAutoFill = function(){
+        document.querySelector('#businessNumber').value = '108-30-28842';
+        document.querySelector('#businessName').value = 'P&P Tile';
+        document.querySelector('#representativeName').value = '박재훈';
+    }
+
+    // ==================================== Util ====================================
+
+    const getFormattedNumber = function({
+        number
+    }){
+        return numberFormatter.format(number);
+    }
+
+</script>
 </html>

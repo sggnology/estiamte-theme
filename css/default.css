@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Aboreto-Regular";
+    src: url("/asset/font/Aboreto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "GowunBatang-Regular";
+    src: url("/asset/font/GowunBatang-Regular.ttf");
+}
+
+p{
+    margin: 0 !important;
+}
