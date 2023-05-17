@@ -1,5 +1,5 @@
 # estiamte-theme
-견적서 작성을 위한 작은 프로젝트입니다.
+견적서 작성을 위한 토이 프로젝트입니다.
 
 ## estimate url page
 - [https://estimatetheme.netlify.app/](https://estimatetheme.netlify.app/)
